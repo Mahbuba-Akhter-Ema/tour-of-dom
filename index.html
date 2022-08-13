@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour To DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DOM event</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ut necessitatibus veniam voluptatum rerum impedit earum doloremque minus. Tempora, omnis.</p>   
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>My Awesome Dom de baba</h1>
+        <ul>
+            <li>Jalali set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+        </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like:</h1>
+            <ul>
+                <li class="fruits-loved">Coconat</li>
+                <li class="fruits-loved">Banana</li>
+                <li class="fruits-loved">Manggo</li>
+                <li>Strawberry</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I visited:</h1>
+            <ul id="places-list">
+                <li>Sylhet</li>
+                <li>Dhaka</li>
+                <li>Sunamganj</li>
+                <li>Mymansingh</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // console.log('hello js');
+        const liCollection = document.getElementsByTagName('li');
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const h1 of allHeadings) {
+            // console.log(h1.innerText);
+        }
+        const place = document.getElementById('places-title');
+        // console.log(place.innerText);
+
+        const fruits = document.getElementsByClassName('fruits-loved');
+        for (const fruit of fruits) {
+            // console.log(fruit.innerText);
+        }
+    </script>
+    <script src="js/append.js"></script>
+    <script src="js/dom.js"></script>
+</body>
+</html>
